@@ -1,5 +1,5 @@
 # devops101
-Here I publush my devops roadmap 
+Here I publish my devops roadmap. 
 
 ## :brain: Theory - Notion page:
 - [Computer Networks](https://www.notion.so/702dc7b8f49e4f638a77e529a9836abf)
