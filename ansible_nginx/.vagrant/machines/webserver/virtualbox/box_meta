@@ -1,1 +1,1 @@
-{"name":"hashicorp-vagrant/ubuntu-16.04","version":"1.0.1","provider":"virtualbox","directory":"boxes/hashicorp-vagrant-VAGRANTSLASH-ubuntu-16.04/1.0.1/virtualbox"}
+{"name":"ubuntu/trusty64","version":"20190514.0.0","provider":"virtualbox","directory":"boxes/ubuntu-VAGRANTSLASH-trusty64/20190514.0.0/virtualbox"}
