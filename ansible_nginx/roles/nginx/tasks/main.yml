@@ -1,0 +1,17 @@
+---
+- name: Install Nginx Web Server on
+  apt: name=nginx state=latest update_cache=yes
+  notify:
+    - nginx systemd
+
+- name: Add nginx conf file
+  template:
+    src=templates/nginx_hello-world.conf
+    dest=/etc/nginx/sites-available/nginx_hello-world
+
+- name: Create symlinks
+  file: src=/etc/nginx/sites-available/nginx_hello-world dest=/etc/nginx/sites-enabled/nginx_hello-world state=link
+
+- name: Copy content of website logo
+  copy: src=/vagrant/static_site/ dest=/static_site 
+  notify: restart nginx
